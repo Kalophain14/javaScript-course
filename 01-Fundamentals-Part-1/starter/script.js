@@ -123,8 +123,17 @@ console.log(thisYear - 1994 < thisYear - 2090); */
 
 //Operator precedence
 
+//operator precedence = links (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
+
 const thisYear = 2025;
 const ageTemoso = thisYear - 1994;
 const ageSlv = thisYear - 1992;
 
 console.log(thisYear - 1994 < thisYear - 2090);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10
+console.log(x, y);
+
+const averageAge = (ageTemoso + ageSlv) / 2;
+console.log(ageTemoso, ageSlv, averageAge);
