@@ -125,7 +125,7 @@ console.log(thisYear - 1994 < thisYear - 2090); */
 
 //operator precedence = links (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
 
-const thisYear = 2025;
+/*const thisYear = 2025;
 const ageTemoso = thisYear - 1994;
 const ageSlv = thisYear - 1992;
 
@@ -137,3 +137,30 @@ console.log(x, y);
 
 const averageAge = (ageTemoso + ageSlv) / 2;
 console.log(ageTemoso, ageSlv, averageAge);
+
+*/
+
+// Template and Strings Literals
+const firstName = "Temoso";
+const job = "software engineer";
+const birthYear = 1994;
+const year = 2028;
+
+const TemosoNew = `my name is ${firstName}, a beginner ${job} who is born in ${
+  year - birthYear
+} and would likle to achieve his goal in the next ${year - birthYear} years`;
+console.log(TemosoNew);
+
+console.log(`Temoso Chueu`);
+
+//old new line
+console.log(`
+Baby I love you \n\
+multiple \n\
+lines`);
+
+// template string new
+console.log(`
+string
+multiple
+lines`);
