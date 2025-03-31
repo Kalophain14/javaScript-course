@@ -167,7 +167,7 @@ lines`);
 
 **/
 
-// Taking decisions if / else statements
+/* Taking decisions if / else statements
 const age = 25;
 
 if (age >= 30) {
@@ -189,3 +189,30 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+*/
+
+/* Type Conversion and Cohersion
+
+// Type Conversion - Is when we manually convert from one type to another
+
+const inputYear = "1991";
+console.log(inputYear + 18);
+console.log(Number(inputYear)); //returns string inputYear as a number by using type conversion (Number)
+
+//console.log(Number("Jonas")); Nan = NotaNumber
+
+console.log(String(23), 23);
+
+Converts can be made to
+- to a Number
+- to a String
+- to a Boolean(true/false);
+
+// Type Cohersion - is when Javascript automitically converts types for us
+
+console.log(`I am ` + 23 + ` years old`);
+
+let n = `1` + 1; //string 11 it is concatenated + 1
+n = n - 1;
+console.log(n);
+*/
