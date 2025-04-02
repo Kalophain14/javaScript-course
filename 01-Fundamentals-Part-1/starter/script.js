@@ -215,7 +215,6 @@ console.log(`I am ` + 23 + ` years old`);
 let n = `1` + 1; //string 11 it is concatenated + 1
 n = n - 1;
 console.log(n);
-*/
 
 // Truthy and Falsy values
 
@@ -232,7 +231,7 @@ console.log(Boolean(undefined));
 console.log(Boolean(null));
 console.log(Boolean(`j`));
 
-const money = 100;
+const money = 0;
 
 if (money) {
   console.log(`Don't spend it all 😉`);
@@ -246,3 +245,34 @@ if (height) {
 } else {
   console.log(`Height is UNDEFINED`);
 }
+*/
+
+// Equity Operators: == vs ===
+// == Lose (does type cohersion)
+// === Strict (doesnt perfome type Cohersion)
+
+/*  const age = 18;
+if (age === 18) {
+  console.log(`You are an adult (strict)🙈`);
+} // its better to use strict to compare values
+
+if (age == `18`) {
+  console.log(`You are an adult (loose) 🙈`);
+}
+*/
+
+const favourite = Number(prompt(`What is your favourite number`));
+
+console.log(favourite);
+
+if (favourite === 23) {
+  console.log(`Cool, you are old`);
+} else if (favourite === 7) {
+  console.log(`you are very young`);
+} else if (favourite === 9) {
+  console.log(`You are a Teenager`);
+} else {
+  console.log(`Number is not 23 or 7 or 9`);
+}
+
+if (favourite !== 23) console.log(`You must grow up`);
