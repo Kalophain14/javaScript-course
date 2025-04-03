@@ -259,7 +259,6 @@ if (age === 18) {
 if (age == `18`) {
   console.log(`You are an adult (loose) 🙈`);
 }
-*/
 
 const favourite = Number(prompt(`What is your favourite number`));
 
@@ -276,3 +275,19 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log(`You must grow up`);
+*/
+
+//Basic Boolean Logic: The AND, OR & OPERATORS
+// And Operator (True when all are true)
+// - True/ True = True
+
+// Or Operator = True when One is true
+// False if both are false
+
+const age = 40;
+
+if (age != 20 AND age >= 30) {
+  console.log(`you are very young`);
+} else {
+  console.log(`grow some balls`);
+}
