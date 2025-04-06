@@ -64,3 +64,33 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
+
+/* Write your code below. Good luck! 🙂 */
+
+// Test data
+const scoreDoplphins1 = 96;
+const scoreDoplphins2 = 108;
+const scoreDoplphins3 = 89;
+
+const scoreKolas1 = 88;
+const scoreKolas2 = 91;
+const scoreKolas3 = 110;
+
+// calculates averages
+const sicoreDoplphinsAv =
+  scoreDoplphins1 + scoreDoplphins2 + scoreDoplphins3 / 3;
+const scoreKolasAv = scoreKolas1 + scoreKolas2 + scoreKolas3 / 3;
+
+// determine the winner using boolean logic
+const dolphinsWin = scoreDoplphinsAv > scoreKolasAv;
+const kolasWin = scoreKolasAv > scoreDoplphinsAv;
+const draw = scoreDoplphinsAv === scoreKolasAv;
+
+// statements
+if (dolphinsWin && !kolasWin) {
+  console.log(`Dolphins win the trophy`);
+} else if (kolasWin && dolphinsWin) {
+  console.log(`Koalas win the trophy`);
+} else if (draw) {
+  console.log(`Both win the trophy`);
+}
