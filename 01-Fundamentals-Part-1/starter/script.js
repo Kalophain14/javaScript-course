@@ -277,7 +277,7 @@ if (favourite === 23) {
 if (favourite !== 23) console.log(`You must grow up`);
 */
 
-//Basic Boolean Logic: The AND, OR & OPERATORS
+/* Basic Boolean Logic: The AND, OR & OPERATORS
 // And Operator (True when all are true)
 // - True/ True = True
 
@@ -298,7 +298,7 @@ console.log(!hasGoodVision);
   console.log(`Sarah is able to drive`);
 } else {
   console.log(`Someone else should drive ..`);
-} */
+}
 
 const isTired = false;
 
@@ -306,4 +306,33 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log(`Sarah is able to drive`);
 } else {
   console.log(`Someone else should drive ..`);
+}
+*/
+
+// Swich statements
+
+const day = `thursday`;
+
+switch (day) {
+  case `monday`:
+    console.log(`Plan my course structure`);
+    console.log(`Study for 30 minutes`);
+    console.log(`Review my learning`);
+    break;
+  case `tuesday`:
+    console.log(`prepare the video`);
+    break;
+  case `wednesday`:
+  case `thursday`:
+    console.log(`Write code examples`);
+    break;
+  case `friday`:
+    console.log(`record videos`);
+    break;
+  case `saturday`:
+  case `sunday`:
+    console.log(`enjoy the weekend`);
+    break;
+  default:
+    console.log(`not a valid day`);
 }
