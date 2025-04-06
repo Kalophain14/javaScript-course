@@ -77,20 +77,15 @@ const scoreKolas2 = 91;
 const scoreKolas3 = 110;
 
 // calculates averages
-const sicoreDoplphinsAv =
+const scoreDoplphinsAv =
   scoreDoplphins1 + scoreDoplphins2 + scoreDoplphins3 / 3;
 const scoreKolasAv = scoreKolas1 + scoreKolas2 + scoreKolas3 / 3;
 
-// determine the winner using boolean logic
-const dolphinsWin = scoreDoplphinsAv > scoreKolasAv;
-const kolasWin = scoreKolasAv > scoreDoplphinsAv;
-const draw = scoreDoplphinsAv === scoreKolasAv;
-
 // statements
-if (dolphinsWin && !kolasWin) {
+if (scoreDoplphinsAv > scoreKolasAv) {
   console.log(`Dolphins win the trophy`);
-} else if (kolasWin && dolphinsWin) {
+} else if (scoreKolasAv > scoreDoplphinsAv) {
   console.log(`Koalas win the trophy`);
-} else if (draw) {
+} else if (scoreDoplphinsAv === scoreKolasAv) {
   console.log(`Both win the trophy`);
 }
