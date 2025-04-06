@@ -284,10 +284,26 @@ if (favourite !== 23) console.log(`You must grow up`);
 // Or Operator = True when One is true
 // False if both are false
 
-const age = 40;
+// ! not operator = inverts True(False) or False(True)
 
-if (age != 20 AND age >= 30) {
-  console.log(`you are very young`);
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+console.log(!hasGoodVision);
+
+/* if (hasDriversLicense && hasGoodVision) {
+  console.log(`Sarah is able to drive`);
 } else {
-  console.log(`grow some balls`);
+  console.log(`Someone else should drive ..`);
+} */
+
+const isTired = false;
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive`);
+} else {
+  console.log(`Someone else should drive ..`);
 }
