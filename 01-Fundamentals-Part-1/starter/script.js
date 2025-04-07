@@ -307,7 +307,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log(`Someone else should drive ..`);
 }
-*/
+
 
 // Swich statements
 
@@ -336,3 +336,36 @@ switch (day) {
   default:
     console.log(`not a valid day`);
 }
+*/
+
+// Statements and Expressions
+// An expression is a piece of code that produces a value
+
+/* 3 + 4;
+1991;
+(true && false) || !false;
+
+if (23 > 10) {
+  const str = `23 is bigger`;
+}
+
+const me = `Temoso`;
+const num1 = 2037 - 1994;
+console.log(`I'm ${num1} years old ${me}`);
+*/
+
+// The conditional (Ternary) operator
+// includes ? and :
+
+const age = 100;
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+// different
+let drink2;
+if (age <= 60) {
+  drink2 = `wine`;
+} else {
+  drink2 = `water`;
+}
+console.log(drink2);
