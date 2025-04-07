@@ -352,7 +352,6 @@ if (23 > 10) {
 const me = `Temoso`;
 const num1 = 2037 - 1994;
 console.log(`I'm ${num1} years old ${me}`);
-*/
 
 // The conditional (Ternary) operator
 // includes ? and :
@@ -369,3 +368,4 @@ if (age <= 60) {
   drink2 = `water`;
 }
 console.log(drink2);
+*/

@@ -89,3 +89,14 @@ if (scoreDoplphinsAv > scoreKolasAv) {
 } else if (scoreDoplphinsAv === scoreKolasAv) {
   console.log(`Both win the trophy`);
 }
+
+// The conditional (Ternary) Operator
+
+const bill = 275;
+
+/* Write your code below. Good luck! 🙂 */
+
+const tip = (275 * 15) / 100;
+
+const finalValue = tip >= 50 && tip <= 300;
+console.log(`The bill was 275, the tip was 41.25, and the total value 316.25.`);
