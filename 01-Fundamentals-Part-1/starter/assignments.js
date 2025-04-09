@@ -91,12 +91,12 @@ if (scoreDoplphinsAv > scoreKolasAv) {
 }
 
 // The conditional (Ternary) Operator
-
-const bill = 275;
+const bill = 430;
 
 /* Write your code below. Good luck! 🙂 */
 
-const tip = (275 * 15) / 100;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 
-const finalValue = tip >= 50 && tip <= 300;
-console.log(`The bill was 275, the tip was 41.25, and the total value 316.25.`);
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}.`
+);
