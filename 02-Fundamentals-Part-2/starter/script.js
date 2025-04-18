@@ -31,7 +31,6 @@ console.log(foodLoversProcessor(5, 0));
 
 const appleOrangeJuice = foodLoversProcessor(10, 20);
 console.log(appleOrangeJuice);
-*/
 
 // FUNCTIONS DECLARATION VS EXPRESSIONS
 
@@ -41,7 +40,7 @@ function calcAge1(birthYear) {
 }
 const age1 = calcAge1(1994);
 
-//function and expression(variable)
+//function and expression(stored in a variable)
 const calcAge2 = function (birthYear) {
   return 2030 - birthYear;
 };
@@ -77,3 +76,31 @@ function foodLoversProcessor(apples, oranges) {
   return juice;
 }
 console.log(foodLoversProcessor(2, 3));
+*/
+
+const calcAge = function (birthYear) {
+  return 2025 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement >= 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement; // exit the function immediately
+  } else {
+    console.log(`${firstName} has already retired`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement(1994, `Temoso`));
+console.log(yearsUntilRetirement(1950, `Sylvia`));
+
+/* function name(parameter1, parameter2){
+  block of code inside the function to re-use
+  return = statement or output a value from e
+}
+
+const result = functionName(baby, 1992) = calling the function with arguement by storing the value in a variable result
