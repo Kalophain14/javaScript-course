@@ -10,7 +10,7 @@ if (passTest) hasDriversLicense = true;
 if (hasDriversLicense) console.log(`I can drive :D`);
 */
 
-// FUNCTIONS = pieces of codes that can re-used
+/* FUNCTIONS = pieces/chunks of codes that can re-used
 
 function logger() {
   console.log(`my name is Temoso`);
@@ -31,3 +31,34 @@ console.log(foodLoversProcessor(5, 0));
 
 const appleOrangeJuice = foodLoversProcessor(10, 20);
 console.log(appleOrangeJuice);
+*/
+
+// FUNCTIONS DECLARATION VS EXPRESSIONS
+
+// function declarion
+function calcAge1(birthYear) {
+  return 2030 - birthYear;
+}
+const age1 = calcAge1(1994);
+
+//function and expression(variable)
+const calcAge2 = function (birthYear) {
+  return 2030 - birthYear;
+};
+const age2 = calcAge2(1994);
+console.log(age1, age2);
+
+// Arrow => functions
+const calcAge3 = (birthYear) => 2030 - birthYear;
+const age3 = calcAge3(1994); // call the function
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2025 - birthYear;
+  const retirement = 65 - age;
+  //return retirement;
+  return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetirement(1994, `Temoso`));
+console.log(yearsUntilRetirement(1992, `Sylvia`));
